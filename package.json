@@ -1,0 +1,10 @@
+{
+    "author": "Caleb Wang",
+    "name": "calebwang",
+
+    "dependencies": {
+        "node":"",
+        "express":"",
+        "ejs":""
+        }
+}
