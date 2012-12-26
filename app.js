@@ -1,5 +1,5 @@
 var express = require('express');
-var app = express.createServer();
+var app = express();
 
 app.use(express.bodyParser())
 app.use(express.static('public'))
@@ -27,4 +27,4 @@ app.get('/contact', function(req, res) {
     res.render('contact', {page: 'contact'})
 });
 
-app.listen(process.env.PORT || 8000);
+app.listen(process.env.PORT || 8080);
