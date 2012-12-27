@@ -28,14 +28,15 @@ html
                   a(href='/blog') Blog
                 .span3
                   a(href='/contact') Contact 
-        .row-fluid.well
-              .span8.well
-                block content
-              .span4.well
-                p hi
-    footer 
+        .row-fluid.border-well
+          .span9.content-well
+            #content
+              block content
+          .span3.content-well
+            #sidebar
+              p hi
+    #footer.mycontainer
       .container-fluid
-        .row-fluid
-          .span10.offset1
-            footer &copy; 2012 Caleb Wang. All rights reserved.
+        .row-fluid.footer-well
+          footer &copy; 2012 caleb wang. all rights reserved.
 
