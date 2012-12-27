@@ -1,13 +1,6 @@
 var express = require('express');
 var app = express();
-var poet = require('poet')(app);
-
-poet
-    .createPostRoute('/blog/post/:post', 'post')
-    .createPageRoute('/blog/page/:page', 'page')
-    .createTagRoute('/blog/tag/:tag', 'tag')
-    .createCategoryRoute('/blog/category/:category', 'category')
-    .init();
+var poet = require('poet')( app );
 
 app.use(express.bodyParser());
 app.use(express.static(__dirname + '/public'));
@@ -16,6 +9,13 @@ app.use(app.router);
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/views');
 app.locals.pretty=true;
+
+poet
+    .createPostRoute('/blog/post/:post', 'post')
+    .createPageRoute('/blog/page/:page', 'page')
+    .createTagRoute('/blog/tag/:tag', 'tag')
+    .createCategoryRoute('/blog/category/:category', 'category')
+    .init();
 
 app.get('/', function(req, res){
     res.render('about', {
