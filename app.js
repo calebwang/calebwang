@@ -9,7 +9,8 @@ app.set('views', __dirname + '/views')
 app.set('view options', {layout: true})
 
 app.get('/', function(req, res) {
-    res.render('about', {page: 'about'})
+    res.render('about', {page: 'about'},
+                        {layout: 'layout'})
 });
 
 app.get('/about', function(req, res) {
