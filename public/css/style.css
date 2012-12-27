@@ -1,6 +1,14 @@
-html{color:#000000;background:#ffffff}
+html{
+    color:#000000;
+    background:#ffffff
+}
 
-#content {
+body{
+    font-family: "Helvetica"
+}
+
+
+#content{
     margin-left: 250px;
     margin-top: 20px;
     margin-bottom: 20px;

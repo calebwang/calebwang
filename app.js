@@ -2,10 +2,11 @@ var express = require('express');
 var app = express();
 
 app.use(express.bodyParser())
-app.use(express.static('public'))
+app.use(express.static(__dirname + '/public'))
 
 app.set('view engine', 'ejs')
-app.set('views', 'views') 
+app.set('views', __dirname + '/views') 
+app.set('view options', {layout: true})
 
 app.get('/', function(req, res) {
     res.render('home', {page: 'home'})

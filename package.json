@@ -3,7 +3,6 @@
     "name": "calebwang",
 
     "dependencies": {
-        "node":"",
         "express":"",
         "ejs":""
         }
