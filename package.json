@@ -3,7 +3,7 @@
     "name": "calebwang",
 
     "dependencies": {
-        "express":"2.5.11",
-        "ejs":""
+        "express":"",
+        "jade":""
         }
 }

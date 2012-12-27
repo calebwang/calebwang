@@ -1,20 +1,19 @@
 var express = require('express');
-var app = express.createServer();
+var app = express();
 
 app.use(express.bodyParser())
 app.use(express.static(__dirname + '/public'))
 
-app.set('view engine', 'ejs')
+app.set('view engine', 'jade')
 app.set('views', __dirname + '/views') 
-app.set('view options', {layout: true})
 
 app.get('/', function(req, res) {
-    res.render('about', {page: 'about'},
-                        {layout: 'layout'})
+    res.render('about', {page: 'about'})
 });
 
 app.get('/about', function(req, res) {
-    res.render('about', {page: 'about'})
+    res.render('about', {page: 'about',
+                         title: 'Caleb'})
 });
 
 app.get('/about', function(req, res) {
