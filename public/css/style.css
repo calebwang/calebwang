@@ -1,13 +1,16 @@
 html{
     color:#000000;
-    background:#ffffff;}
+    background:#abcdef;
+}
 
 body{
     font-family: "Helvetica";
+    background:#abcdef;
 }
 
 h1{
     text-align: center;
+    vertical-align: middle;
     font-size: 36px;
 }
 
@@ -15,27 +18,52 @@ h2{
     font-size: 28px;
 }
 
+h3{
+    font-size: 22px;
+}
+
+p{
+    font-size: 16px;
+}
+
 footer{
     font-size: 10px;
     text-align: right;
-    margin-right: 100px;
+    margin-right:0px;
 }
 
-#site-header{
-    margin-top:50px;
-    padding: 5px;
-    height:150px;
+#header{
+    margin-top:100px;
+    padding: 0px;
+    height:180px;
     margin: 0px auto;
-    margin-left:20px;
-    margin-right:100px;
-    background:#00ff00;
+    margin-left:35px;
+    margin-right:35px;
+    margin-bottom:20px;
+    background:#123456;
+    color:#fffff9
+}
+
+
+#nav{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding:30px;
 }
 
 #main-content{
-    margin-left: 75px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    padding: 15px;
-    width: 600px; 
+    height:318px;
+    margin-bottom: 10px;
 }
 
+#main-text{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.content{
+    background:#ffffff;
+    margin-left:150px;
+    margin-right: 150px;
+}

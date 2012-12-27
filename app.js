@@ -21,11 +21,11 @@ app.get('/about', function(req, res){
 });
 
 app.get('/projects', function(req, res){
-    res.render('projects', {page: 'projects'});
+    res.render('projects', {title: 'Projects'});
 });
 
 app.get('/contact', function(req, res){
-    res.render('contact', {page: 'contact'});
+    res.render('contact', {title: 'Contact'});
 });
 
 app.listen(process.env.PORT || 8080);

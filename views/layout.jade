@@ -5,23 +5,34 @@ html
     link(rel='stylesheet', type='text/css', href='/css/bootstrap.css')
     link(rel='stylesheet', type='text/css', href='/css/style.css')
   body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container-fluid
-          a(class='brand', href='/') Caleb
-          .nav-collapse.collapse
-            ul(class='nav')
-              li 
-                a(href='/about') About
-    header
-      .row-fluid
-        .span12
-          #site-header
-            h1 Caleb.
-    .container
-      .row-fluid 
-        .span8
-          block content
-        .span4
-          p hi there
-    footer Copyright 2012 Caleb Wang 
+    #header.content
+      .jumbotron.subhead#overview
+        .row-fluid
+          .span4.offset8
+            h2 Hello.
+            p
+              .line My name is Caleb.
+              .line I'm a second year EECS student at UC Berkeley.
+              .line When I'm not working, I enjoy piano, frisbee, speedcubing, 
+              .line drinking green tea, and looking for good things to eat.
+              .line hao2frontend?
+    #nav.content
+      .container
+        .row
+          .span4
+            a(href='/about') About
+          .span4
+            a(href='/projects') Projects
+          .span4
+            a(href='/contact') Contact 
+    #main-content.content
+      .container
+        .row
+          #main-text
+            block content
+    #footer.content 
+      .container
+        .row
+          .span4.offset8
+            footer Copyright 2012 Caleb Wang 
+
