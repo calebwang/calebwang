@@ -28,4 +28,8 @@ app.get('/contact', function(req, res){
     res.render('contact', {title: 'Contact'});
 });
 
+app.get('/blog', function(req, res){
+    res.render('blog', {title: 'Blog'});
+});
+
 app.listen(process.env.PORT || 8080);
