@@ -1,38 +1,33 @@
 html{
     color:#000000;
-    background:#ffffff
-}
+    background:#ffffff;}
 
 body{
-    font-family: "Helvetica"
+    font-family: "Helvetica";
 }
 
 h1{
-    text-align: center
-    font-size: 36px
+    text-align: center;
+    font-size: 36px;
 }
 
 h2{
-    font-size: 30px
-}
-
-p{
-    font-size:inherit
+    font-size: 28px;
 }
 
 footer{
-    font-size: 10px
+    font-size: 10px;
+    text-align: right;
+    margin-right: 100px;
 }
 
 #site-header{
-    position:fixed
-    top:0px;
-    left:auto;
-    font-size:large
+    margin-top:50px;
     padding: 5px;
-    width: 800px;
-    height:50px;
+    height:150px;
     margin: 0px auto;
+    margin-left:20px;
+    margin-right:100px;
     background:#00ff00;
 }
 

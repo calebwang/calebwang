@@ -1,14 +1,27 @@
 doctype 5
 html
-    head
-        title #{title} 
-        link(rel='stylesheet', type='text/css', href='/css/style.css')
-    body
-        header
-            #site-header
-                h1 Caleb.
-        .row
-        .container
-            #main-content.main-content
-                block content
-        footer Copyright Caleb Wang 2012
+  head
+    title #{title} 
+    link(rel='stylesheet', type='text/css', href='/css/bootstrap.css')
+    link(rel='stylesheet', type='text/css', href='/css/style.css')
+  body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          a(class='brand', href='/') Caleb
+          .nav-collapse.collapse
+            ul(class='nav')
+              li 
+                a(href='/about') About
+    header
+      .row-fluid
+        .span12
+          #site-header
+            h1 Caleb.
+    .container
+      .row-fluid 
+        .span8
+          block content
+        .span4
+          p hi there
+    footer Copyright 2012 Caleb Wang 
