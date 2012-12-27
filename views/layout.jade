@@ -16,26 +16,23 @@ html
               h1 Caleb Wang
             .span4
               block header 
-    .container-fluid
-      .row-fluid
-        #nav
-          .span10.offset1.well
-            .row
-              .span3
-                a(href='/about') About
-              .span3
-                a(href='/projects') Projects
-              .span3
-                a(href='/blog') Blog
-              .span3
-                a(href='/contact') Contact 
-      .row-fluid
-        .span10.offset1
-          .row-fluid
-            .span8.well
-              block content
-            .span4.well
-              p hi
+    .mycontainer
+      .container-fluid
+        .row-fluid.well
+          #nav
+                .span3
+                  a(href='/about') About
+                .span3
+                  a(href='/projects') Projects
+                .span3
+                  a(href='/blog') Blog
+                .span3
+                  a(href='/contact') Contact 
+        .row-fluid.well
+              .span8.well
+                block content
+              .span4.well
+                p hi
     footer 
       .container-fluid
         .row-fluid
