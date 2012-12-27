@@ -1,7 +1,7 @@
 doctype 5
 html
   head
-    title #{title} 
+    title hello. 
     link(rel='stylesheet', type='text/css', href='/css/bootstrap.css')
     link(rel='stylesheet', type='text/css', href='/css/style.css')
   body
@@ -18,23 +18,34 @@ html
               block header 
     .mycontainer
       .container-fluid
-        .row-fluid.well
+        .row-fluid.skinny-well
           #nav
-                .span3
-                  a(href='/about') About
-                .span3
-                  a(href='/projects') Projects
-                .span3
-                  a(href='/blog') Blog
-                .span3
-                  a(href='/contact') Contact 
+            .span3
+              a(href='/about') About
+            .span3
+              a(href='/projects') Projects
+            .span3
+              a(href='/blog') Blog
+            .span3
+              a(href='/contact') Contact 
         .row-fluid.border-well
           .span9.content-well
             #content
               block content
           .span3.content-well
             #sidebar
-              p hi
+              block sidebar
+              p
+                a(href='/about') About
+              br
+              p
+                a(href='/projects') Projects
+              br
+              p
+                a(href='/blog') Blog
+              br
+              p
+                a(href='/contact') Contact
     #footer.mycontainer
       .container-fluid
         .row-fluid.footer-well
