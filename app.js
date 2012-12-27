@@ -9,11 +9,11 @@ app.set('views', __dirname + '/views')
 app.set('view options', {layout: true})
 
 app.get('/', function(req, res) {
-    res.render('home', {page: 'home'})
+    res.render('about', {page: 'about'})
 });
 
-app.get('/home', function(req, res) {
-    res.render('home', {page: 'home'})
+app.get('/about', function(req, res) {
+    res.render('about', {page: 'about'})
 });
 
 app.get('/about', function(req, res) {
