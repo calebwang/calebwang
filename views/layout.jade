@@ -15,32 +15,28 @@ html
               br
               h1 Caleb Wang
             .span4
-              h2 Hello.
-              p
-                .line My name is Caleb.
-                .line I'm a second year EECS student at UC Berkeley.
-                .line When I'm not working, I enjoy piano, frisbee, speedcubing, 
-                .line drinking green tea, and looking for good things to eat.
-                .line hao2frontend?
-    #nav.content
-      .container
-        .row
-          .span3
-            a(href='/about') About
-          .span3
-            a(href='/projects') Projects
-          .span3
-            a(href='/blog') Blog
-          .span3
-            a(href='/contact') Contact 
-    #main-content.content
-      .container
-        .row
-          #main-text
-            block content
-    #footer.content 
-      .container
-        .row
-          .span4.offset8
-            footer Copyright 2012 Caleb Wang. All rights reserved.
+              block header 
+    .container-fluid
+      .row-fluid
+        #nav
+          .span10.offset1.well
+            .row
+              .span3
+                a(href='/about') About
+              .span3
+                a(href='/projects') Projects
+              .span3
+                a(href='/blog') Blog
+              .span3
+                a(href='/contact') Contact 
+      .row-fluid
+        .span8.well.offset1
+          block content
+        .span2.well
+          p hi
+    footer 
+      .container-fluid
+        .row-fluid
+          .span10.offset1
+            footer &copy; 2012 Caleb Wang. All rights reserved.
 
