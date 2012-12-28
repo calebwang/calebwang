@@ -1,4 +1,4 @@
-// vim: set ts=2 sw=2
+// vim: set ts=2 sw=2 expandtab:
 doctype 5
 html
   head
@@ -10,8 +10,8 @@ html
     script
       $(document).ready(function(){
         $(window).scroll(function(){
-          if ($(this).scrollTop() > 270) {
-            $('#sidebar').css({'margin-top': ($(this).scrollTop()) - 280});
+          if ($(this).scrollTop() > 250) {
+            $('#sidebar').css({'margin-top': ($(this).scrollTop()) - 270});
           }
           else {
             $('#sidebar').animate({'margin-top': 0}, 0);
@@ -25,11 +25,11 @@ html
             .span7
               br
               br
-              br
               h1
                 a.white(href='/') caleb wang
             .span4
-              block header 
+              #header-right
+                block header 
     .mycontainer
       .container-fluid
         .row-fluid.skinny-well
