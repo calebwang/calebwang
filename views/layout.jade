@@ -1,3 +1,4 @@
+// vim: set ts=2 sw=2
 doctype 5
 html
   head
@@ -5,6 +6,18 @@ html
     link(rel='stylesheet', type='text/css', href='/css/bootstrap.css')
     link(rel='stylesheet', type='text/css', href='/css/style.css')
   body
+    script(src='/js/jquery-1.8.3.js')
+    script
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 270) {
+            $('#sidebar').css({'margin-top': ($(this).scrollTop()) - 280});
+          }
+          else {
+            $('#sidebar').animate({'margin-top': 0}, 0);
+          }
+        });
+      });
     .container-fluid
       #header.content
         .jumbotron.subhead#overview
@@ -13,7 +26,8 @@ html
               br
               br
               br
-              h1 caleb wang
+              h1
+                a.white(href='/') caleb wang
             .span4
               block header 
     .mycontainer
@@ -29,11 +43,10 @@ html
             .span3
               a(href='/contact') contact 
         .row-fluid.border-well
-          .span9.content-well
-            #content
-              block content
-          .span3.content-well
-            #sidebar
+          #content.span9.content-well
+            block content
+          .span3
+            #sidebar.container-fluid.content-well.floating
               block sidebar
               p
                 a(href='/about') about
