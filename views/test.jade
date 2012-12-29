@@ -1,0 +1,7 @@
+// vim: set ts=2 sts=2 sw=2 expandtab:
+extends layout
+
+block content
+  - var files = listFiles()
+  - each file in files
+    include includes/entry
