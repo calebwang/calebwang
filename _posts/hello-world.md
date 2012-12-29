@@ -1,6 +1,8 @@
 {{{
     "title": "hello world",
     "date" : "12-29-2012"
+    "tags": ["hello", "world", "meta"]
+    "category": "meta"
 
 }}}
 
