@@ -1,5 +1,5 @@
 {{{
-    "title": "hello world"
+    "title": "hello world",
     "date" : "12-29-2012"
 
 }}}
