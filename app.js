@@ -20,30 +20,30 @@ poet
 
 app.get('/', function(req, res){
     res.render('about', {
-                         title: 'Caleb'
+                         title: 'caleb'
                         });
     console.log('Serving /');
 });
 
 app.get('/about', function(req, res){
     res.render('about', {
-                         title: 'Caleb'
+                         title: 'caleb'
                         });
     console.log('Serving /about');
 });
 
 app.get('/projects', function(req, res){
-    res.render('projects', {title: 'Projects'});
+    res.render('projects', {title: 'projects'});
     console.log('Serving /projects');
 });
 
 app.get('/contact', function(req, res){
-    res.render('contact', {title: 'Contact'});
+    res.render('contact', {title: 'contact'});
     console.log('Serving /contact');
 });
 
 app.get('/blog', function(req, res){
-    res.render('blog', {title: 'Blog'});
+    res.render('blog', {title: 'blog'});
     console.log('Serving /blog');
 });
 

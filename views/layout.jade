@@ -2,7 +2,7 @@
 doctype 5
 html
   head
-    title hello. 
+    title #{title} 
     link(rel='stylesheet', type='text/css', href='/css/bootstrap.css')
     link(rel='stylesheet', type='text/css', href='/css/style.css')
   body
@@ -53,24 +53,36 @@ html
             .span3
               a(href='/contact') contact 
         .row-fluid.border-well
-          #content.span9.content-well
-            block content
+          - if (title == 'blog')
+            #content.span9.content-well
+              block content
+          - else
+            #content.span12.content-well
+              block content
           .span3
-            #sidebar.side-well.floating
-              block sidebar
-              p
-                a(href='/about') about
-              br
-              p
-                a(href='/projects') projects
-              br
-              p
-                a(href='/blog') blog
-              br
-              p
-                a(href='/contact') contact
-    #footer.mycontainer
-      .container-fluid
-        .row-fluid.footer-well
-          footer &copy; 2012 caleb wang. all rights reserved.
+            - if (title == 'blog')
+              #sidebar.side-well.floating
+                block sidebar
+                p
+                  a(href='/about') about
+                br
+                p
+                  a(href='/projects') projects
+                br
+                p
+                  a(href='/blog') blog
+                br
+                p
+                  a(href='/contact') contact
+    .mycontainer
+      - if (title == 'blog')
+        #blog-footer
+          .container-fluid
+            .row-fluid.footer-well
+              footer &copy; 2012 caleb wang. all rights reserved.
+      - else
+        #footer
+          .container-fluid
+            .row-fluid.footer-well
+              footer &copy; 2012 caleb wang. all rights reserved.
 
