@@ -46,4 +46,7 @@ app.get('/blog', function(req, res){
     console.log('Serving /blog');
 });
 
-app.listen(process.env.PORT || 8000);
+var port = process.env.PORT || 8000
+app.listen(port, function() {
+  console.log('Listening on port ' + port);
+});
