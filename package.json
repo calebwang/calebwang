@@ -5,7 +5,7 @@
     "main": "app.js",
     "private": "true",
     "engines":{
-        "Node.js": "0.8.x",
+        "node": "0.8.x",
         "npm": "1.1.x"
     },
     "dependencies": {
