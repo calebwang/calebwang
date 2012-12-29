@@ -5,7 +5,7 @@
     "main": "app.js",
     "private": "true",
     "dependencies": {
-        "node.js": "0.8.x",
+        "Node.js": "0.8.x",
         "npm": "1.1.x",
         "express":"3.0.x",
         "jade":"0.27.x",
