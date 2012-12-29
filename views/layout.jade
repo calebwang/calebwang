@@ -22,12 +22,24 @@ html
       #header.content
         .jumbotron.subhead#overview
           .row-fluid 
-            .span7
-              h1
+            #helpAlignHeader.span5
+              h1.align-right
                 a.white(href='/') caleb wang
-            .span4
-              #header-right
+            .span7
+              .hidden.align-right
                 block header 
+              .container-fluid
+                .row-fluid
+                  br
+                .row-fluid#nav
+                  .span3
+                    a.white(href='/about') about
+                  .span3
+                    a.white(href='/projects') projects
+                  .span3
+                    a.white(href='/blog') blog
+                  .span3
+                    a.white(href='/contact') contact 
     .mycontainer
       .container-fluid
         .row-fluid.skinny-well.hidden
