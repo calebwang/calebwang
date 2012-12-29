@@ -52,10 +52,25 @@ texting{
     text-align: right;
 }
 
-a.white{
+a.white {
+    color:#ffffff;
+}
+a.white:link{
     color:#ffffff;
     font-style:normal;
 }
+a.white:visited{
+    color:#ffffff;
+    font-style:normal;
+}
+a.white:hover{
+    color:#ffffff;
+    text-decoration:none;
+} 
+a.white:active{
+    color:#ffffff;
+    text-decoration:none;
+} 
 
 #nav{
     font-size: 22px;
@@ -70,7 +85,7 @@ a.white{
 }
 
 #content{
-    min-height:198px;
+    min-height:195px;
 }
 
 .mycontainer{
