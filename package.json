@@ -4,9 +4,11 @@
     "version": "0.1.0",
     "main": "app.js",
     "private": "true",
-    "dependencies": {
+    "engines":{
         "Node.js": "0.8.x",
-        "npm": "1.1.x",
+        "npm": "1.1.x"
+    }
+    "dependencies": {
         "express":"3.0.x",
         "jade":"0.27.x",
         "poet":"0.2.x"
