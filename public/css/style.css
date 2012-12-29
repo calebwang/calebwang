@@ -30,7 +30,9 @@ texting{
 #footer{
     font-size: 10px;
     text-align: right;
-    margin-bttom: 10px;
+    margin-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 #header{
@@ -68,7 +70,7 @@ a.white{
 }
 
 #content{
-    min-height:192px;
+    min-height:198px;
 }
 
 .mycontainer{
@@ -94,7 +96,7 @@ a.white{
   padding-left: 12px;
   padding-right: 12px;
   background-color: #f0f0f0;
-  border: 1px solid #e3e3e3;
+  border: 3px solid #ff9900;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -104,8 +106,9 @@ a.white{
   padding-top: 12px;
   padding-left: 12px;
   padding-right: 12px;
+  padding-bottom: 3px;
   background-color: #f0f0f0;
-  border: 1px solid #e3e3e3;
+  border: 3px solid #ff9900;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -116,8 +119,6 @@ a.white{
 .border-well {
   min-height: 25px;
   padding: 12px;
-  background-color: #c8c8c8;
-  border: 1px solid #c8c8c8;
   -webkit-border-top-left-radius: 6px;
   -webkit-border-top-right-radius: 6px;
      -moz-border-radius-topright: 6px;
