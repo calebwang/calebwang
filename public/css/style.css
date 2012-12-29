@@ -119,6 +119,7 @@ a.white{
 .border-well {
   min-height: 25px;
   padding: 12px;
+  //background-color:#e3e3e3
   -webkit-border-top-left-radius: 6px;
   -webkit-border-top-right-radius: 6px;
      -moz-border-radius-topright: 6px;
