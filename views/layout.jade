@@ -10,8 +10,8 @@ html
     script
       $(document).ready(function(){
         $(window).scroll(function(){
-          if ($(this).scrollTop() > 250) {
-            $('#sidebar').css({'margin-top': ($(this).scrollTop()) - 270});
+          if ($(this).scrollTop() > 115) {
+            $('#sidebar').css({'margin-top': ($(this).scrollTop()) - 120});
           }
           else {
             $('#sidebar').animate({'margin-top': 0}, 0);
@@ -23,8 +23,6 @@ html
         .jumbotron.subhead#overview
           .row-fluid 
             .span7
-              br
-              br
               h1
                 a.white(href='/') caleb wang
             .span4
@@ -32,7 +30,7 @@ html
                 block header 
     .mycontainer
       .container-fluid
-        .row-fluid.skinny-well
+        .row-fluid.skinny-well.hidden
           #nav
             .span3
               a(href='/about') about
@@ -46,7 +44,7 @@ html
           #content.span9.content-well
             block content
           .span3
-            #sidebar.container-fluid.content-well.floating
+            #sidebar.container-fluid.side-well.floating
               block sidebar
               p
                 a(href='/about') about

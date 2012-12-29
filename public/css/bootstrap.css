@@ -3876,6 +3876,7 @@ input[type="submit"].btn.btn-mini {
 .pagination {
   margin: 20px 0;
 }
+
 .pagination ul {
   display: inline-block;
   *display: inline;
@@ -3891,11 +3892,12 @@ input[type="submit"].btn.btn-mini {
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
-.pagination ul > li {
+
+.pagination  ul > li {
   display: inline;
 }
-.pagination ul > li > a,
-.pagination ul > li > span {
+.pagination  ul > li > a,
+.pagination  ul > li > span {
   float: left;
   padding: 4px 12px;
   line-height: 20px;
