@@ -1,6 +1,8 @@
 extends layout
-  h1 All Tags
+  h2 All Tags
   ul
     - each tag in tagList
       li
         a(href=tagUrl(tag)) #{tag}
+block title
+  title blog - tags

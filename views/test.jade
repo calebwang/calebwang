@@ -2,6 +2,7 @@
 extends layout
 
 block content
-  - var files = listFiles()
+  - var files = listFiles('/public/files')
   - each file in files
-    include includes/entry
+    - console.log(file)
+    p= file 

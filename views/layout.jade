@@ -2,7 +2,7 @@
 doctype 5
 html
   head
-    title #{title} 
+    block title
     link(rel='stylesheet', type='text/css', href='/css/bootstrap.css')
     link(rel='stylesheet', type='text/css', href='/css/style.css')
   body
@@ -42,47 +42,29 @@ html
                     a.white(href='/contact') contact 
     .mycontainer
       .container-fluid
-        .row-fluid.skinny-well.hidden
-          #nav
-            .span3
-              a(href='/about') about
-            .span3
-              a(href='/projects') projects
-            .span3
-              a(href='/blog') blog
-            .span3
-              a(href='/contact') contact 
         .row-fluid.border-well
           - if (title == 'blog')
             #content.span9.content-well
               block content
+            .span3
+              #sidebar.side-well.floating
+                p
+                  .line tags
+                  .tags
+                  - each tag in tagList
+                    .side-label
+                      a(href=tagUrl(tag))= tag
+                      br
+                p
+                  .line categories
+                  - each cat in categoryList
+                    a(href=categoryUrl(cat))= cat
+                    br
           - else
             #content.span12.content-well
               block content
-          .span3
-            - if (title == 'blog')
-              #sidebar.side-well.floating
-                block sidebar
-                p
-                  a(href='/about') about
-                br
-                p
-                  a(href='/projects') projects
-                br
-                p
-                  a(href='/blog') blog
-                br
-                p
-                  a(href='/contact') contact
     .mycontainer
-      - if (title == 'blog')
         #blog-footer
           .container-fluid
             .row-fluid.footer-well
               footer &copy; 2012 caleb wang. all rights reserved.
-      - else
-        #footer
-          .container-fluid
-            .row-fluid.footer-well
-              footer &copy; 2012 caleb wang. all rights reserved.
-

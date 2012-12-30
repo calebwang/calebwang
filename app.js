@@ -10,6 +10,7 @@ app.use(app.router);
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/views');
 app.locals.pretty=true;
+app.locals.title='blog';
 
 poet
     .createPostRoute('/blog/post/:post', 'post')
@@ -47,15 +48,36 @@ app.get('/blog', function(req, res){
     console.log('Serving /blog');
 });
 
+app.get('/blog/categories', function(req, res){
+    res.render('categories', {title: 'blog - categories'});
+    console.log('Serving /blog/categories');
+}
+
+app.get('/blog/tags', function(req, res){
+    res.render('tags', {title: 'blog - tags'});
+    console.log('Serving /blog/tags');
+}););
+
+
 function myCallback(data){
     return data;
 }
 
-function readContent(filename, callback) {
-    fs.readFile(__dirname + '/public' + filename, function(err, data) {
-        if (err) return callback(err)
-        callback(data)
-    })
+function readContent(path) {
+    var output = Array() 
+    fs.readDir(__dirname + '/public' + path, function(err, files) {
+        if (err) return err
+        for (var i = 0; i < files.length; i++) {
+            fs.readFile(__dirname + '/public' + path + '/' + file, function(err, data) {
+                if (err) return err 
+                output[i] = data;
+            });
+        }
+    });
+    while (output.length < files.length) {
+        var x = 0;
+    }
+    return output
 }
 
 app.get('/test', function(req, res){
@@ -70,10 +92,10 @@ app.get('/test', function(req, res){
                         getJSON: function(filename){
                             return JSON.parse(fs.readFileSync(__dirname + '/public' + filename))
                             },
-                        listFiles: function(){
+                        listFiles: function(path){
                                 var myArr = Array()
                                 myArr[0] = '/files/test.json';
-                                return myArr
+                                return fs.readdirSync(__dirname + path)
                             }
                         }
     );    

@@ -1,9 +1,13 @@
 extends layout
+block title
+  title blog
 
 block content
   - var posts = getPosts(0,5)
   - var page  = 1
   - each post in posts
+    - console.log(post.title)
     include includes/postSnippet
 
   include includes/pagination
+
