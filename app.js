@@ -51,12 +51,12 @@ app.get('/blog', function(req, res){
 app.get('/blog/categories', function(req, res){
     res.render('categories', {title: 'blog - categories'});
     console.log('Serving /blog/categories');
-}
+});
 
 app.get('/blog/tags', function(req, res){
     res.render('tags', {title: 'blog - tags'});
     console.log('Serving /blog/tags');
-}););
+});
 
 
 function myCallback(data){
