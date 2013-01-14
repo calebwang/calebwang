@@ -4,20 +4,23 @@ html{
 }
 
 body{
-    font-family: Quicksand, Avenir, Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Quattrocento Sans', Quicksand, Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background:#282828;
 }
 
 h1{
     vertical-align: middle;
-    font-size: 69px;
+    margin-right: 36px;
+    font-size: 66px;
     padding-top: 5px;
 }
 
 
 h2{
     font-size: 28px;
-    margin-top: 4px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    line-height: 30px;
 }
 
 h3{
@@ -27,6 +30,7 @@ h3{
 texting{
     font-size: 18px;
 }
+
 #footer{
     font-size: 10px;
     text-align: right;
@@ -47,7 +51,7 @@ texting{
 
 #header{
     padding:10px;
-    height:80px;
+    height:76px;
     margin: 0px auto;
     margin-left:15px;
     margin-right:15px;

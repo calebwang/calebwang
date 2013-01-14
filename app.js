@@ -2,8 +2,10 @@ var express = require('express');
 var app = express();
 var poet = require('poet')( app );
 var fs = require('fs')
+var connect = require('connect')
 
 app.use(express.bodyParser());
+app.use(connect.compress());
 app.use(express.static(__dirname + '/public'));
 app.use(app.router);
 
