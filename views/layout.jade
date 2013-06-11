@@ -3,69 +3,19 @@ doctype 5
 html
   head
     block title
-    link(rel='stylesheet', type='text/css', href='/css/bootstrap.css')
     link(rel='stylesheet', type='text/css', href='/css/style.css')
     link(rel='icon', type='image/x-icon', href='/images/site.ico')
     link(href='http://fonts.googleapis.com/css?family=Quattrocento+Sans', rel='stylesheet', type='text/css')
-  body
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
-    script
-      $(document).ready(function(){
-        $(window).scroll(function(){
-          if ($(this).scrollTop() > 115) {
-            $('#sidebar').css({'margin-top': ($(this).scrollTop()) - 120});
-          }
-          else {
-            $('#sidebar').animate({'margin-top': 0}, 0);
-          }
-        });
-      });
-    .container-fluid
-      #header.content
-        .jumbotron.subhead#overview
-          .row-fluid 
-            #helpAlignHeader.span5
-              h1.align-right
-                a.white(href='/') caleb wang
-            .span6
-              .hidden.align-right
-                block header 
-              .container-fluid
-                .row-fluid
-                  br
-                .row-fluid#nav
-                  .span3
-                    a.white(href='/about') about
-                  .span3
-                    a.white(href='/projects') projects
-                  .span3
-                    a.white(href='/blog') blog
-                  .span3
-                    a.white(href='/contact') contact 
-    .mycontainer
-      .container-fluid
-        .row-fluid.border-well
-          - if (title == 'blog')
-            #content.span9.content-well
-              block content
-            .span3
-              #sidebar.side-well.floating
-                p
-                  .line tags
-                  .tags
-                  - each tag in tagList
-                    .side-label
-                      a(href=tagUrl(tag))= tag
-                      br
-                p
-                  .line categories
-                  - each cat in categoryList
-                    a(href=categoryUrl(cat))= cat
-                    br
-          - else
-            #content.span12.content-well
-              block content
-      #blog-footer
-        .container-fluid
-          .row-fluid.footer-well
-            footer &copy; 2012 caleb wang. all rights reserved.
+  body
+    div#header
+    div#content
+    canvas#sidebar.sidebar
+    script(src='/js/sidebar.js', type='text/javascript')
+    div#navbar
+      div.navicon#slot_1 slot
+      div.navicon#slot_2 frwards
+      div.navicon#hero_slot pikachu
+      div.navicon#slot_4 forward 
+      div.navicon#slot_5 contact
+    script(src='/js/navigation.js', type='text/javascript')
