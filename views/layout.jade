@@ -9,13 +9,18 @@ html
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
   body
     div#header
-    div#content
+      div#header-hero
+        include header
+      div#header-icon
+      div#header-quote I approve my own pull requests.
+    div#content.well
+      p On a cold and dark night...
     canvas#sidebar.sidebar
     script(src='/js/sidebar.js', type='text/javascript')
     div#navbar
-      div.navicon#slot_1 slot
-      div.navicon#slot_2 frwards
-      div.navicon#hero_slot pikachu
-      div.navicon#slot_4 forward 
-      div.navicon#slot_5 contact
+      div.navicon#slot_1 
+      div.navicon#slot_2
+      div.navicon#hero_slot
+      div.navicon#slot_4
+      div.navicon#slot_5
     script(src='/js/navigation.js', type='text/javascript')

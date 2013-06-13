@@ -50,6 +50,12 @@ app.get('/blog', function(req, res){
     console.log('Serving /blog');
 });
 
+app.get('/resume', function(req, res){
+    res.render('about', {title: 'about'});
+    console.log('Serving /blog');
+});
+
+
 app.get('/blog/categories', function(req, res){
     res.render('categories', {title: 'blog - categories'});
     console.log('Serving /blog/categories');

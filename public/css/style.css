@@ -1,74 +1,81 @@
-html{
+html {
     color:#000000;
     background:#f0f0f0;
 }
 
-body{
-    font-family: 'Quattrocento Sans', Quicksand, Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background:#f0f0f0;
+    font-weight: 200;
 }
 
-h1{
+h1 {
+    font-weight: 300;
     vertical-align: middle;
-    margin-right: 36px;
-    font-size: 66px;
-    padding-top: 5px;
+    font-size: 120px;
+    margin-top: -15px;
 }
 
 
-h2{
+h2 {
     font-size: 28px;
     margin-top: 8px;
     margin-bottom: 4px;
     line-height: 30px;
 }
 
-h3{
+h3 {
     font-size: 32px;
 }
 
-.sidebar{
+.sidebar {
     position: fixed; 
     right: 0px;
     margin: -8px;
 }
 
-.navicon{
+.navicon {
     position: fixed;;
     right: 25px;
 }
 
-#slot_1{
+#slot_1 {
     margin-top: -25px;
     font-size: 56px;
+    width: 166px;
     top: 9%;
 }
 
-#slot_2{
+#slot_2 {
     font-size: 72px;
     right: 40px;
+    width: 250px;
     top: 21% 
 }
 
-#hero_slot{
-    right: 75px;
+#hero_slot {
+    right: 50px;
     top: 48%;
+    text-align: center;
+    width: 330px;
     margin-top: -60px;
     font-size: 96px;
 }
 
-#slot_4{
+#slot_4 {
     top: 63%;
     right: 40px;
+    width: 250px;
     font-size: 72px;
 }
 
-#slot_5{
-    bottom: 9%;
+#slot_5 {
+    top: 83%;
     font-size: 52px;
+    width: 166px;
 }
 
-#navbar{
+#navbar {
     position: fixed;
     right: 0px;
     top: 0px;
@@ -76,26 +83,63 @@ h3{
     width: 400px;
 }
 
-#header{
+#header {
     position: absolute;
     padding: 8px;
     top: 0px;
     left: 0px;
     right: 290px;
-    height: 160px;
+    height: 120px;
     margin: 15px;
+    border: 5px solid #c0c0c0;
+    margin-left: 100px;
     margin-right: 18px;
     background: #00ff00;
 }
 
-#content{
+#header-hero {
+    text-align: right;
+    margin-right: 80px;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+
+#header-icon {
     position: absolute;
-    padding: 8px;
-    top: 190px;
+    top: 0px;
+    left: 0px;
+    font-size: 40px;
+    margin-top: 25px;
+    margin-left: 60px;
+}
+
+#header-quote {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 24px;
+    text-align: right;
+    margin-top: 93px;
+    margin-right: 160px;
+    width: 555px;
+}
+#content {
+    position: absolute;
+    padding: 16px;
+    padding-top: 0px;
+    top: 150px;
     bottom: 0px;
     left: 0px;
     right: 290px;
     margin: 15px;
+    margin-left: 100px;
     margin-right: 18px;
     background: #ff0000;
+}
+
+.well {
+    border: 5px solid #e3e3e3;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
 }
