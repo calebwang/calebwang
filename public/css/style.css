@@ -35,112 +35,83 @@ h3 {
 }
 
 .navicon {
-    margin-left: 10px;
-    margin-right: 70px;
-    width: 80px;
-}
-
-#slot_1 {
-    margin-top: -25px;
-    font-size: 56px;
-    width: 166px;
-    top: 9%;
-}
-
-#slot_2 {
-    font-size: 72px;
-    right: 40px;
-    width: 250px;
-    top: 21% 
-}
-
-#hero_slot {
-    right: 50px;
-    top: 48%;
-    text-align: center;
-    width: 330px;
-    margin-top: -60px;
-    font-size: 96px;
-}
-
-#slot_4 {
-    top: 63%;
-    right: 40px;
-    width: 250px;
-    font-size: 72px;
-}
-
-#slot_5 {
-    top: 83%;
-    font-size: 52px;
-    width: 166px;
-}
-
-#navbar {
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    width: 400px;
+    margin-left: 34px;
+    margin-right: 34px;
 }
 
 #header {
     padding-left: 8px;
     top: 0px;
-    width: 70%;
     height: 100px;
-    margin: 15px;
     border-bottom: 4px solid #3399cc;
     /*3399cc*/
-    margin-left: 125px;
-    margin-right: 18px;
 }
 
 #header-hero {
     float: left;
     text-align: left;
     margin-left: 10px;
-    margin-top: 40px;
+    margin-top: 42px;
     width: 400px;
-}
-
-#header-icon {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    font-size: 40px;
-    margin-top: 25px;
-    margin-left: 60px;
+    height: 72px;
 }
 
 #header-nav{
     float: right;
-    width: 550px;
-    margin-top: 70px;
-    margin-left: 0px;
-    font-size: 28px;   
+    width: 530px;
+    margin-top: 75px;
+    margin-left: 20px;
+    font-size: 24px;   
 }
 
 #header-quote {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    font-size: 20px;
+    left: 0px;
+    font-size: 12px;
     text-align: right;
     margin-top: 102px;
-    margin-right: 155px;
-    width: 555px;
+    margin-left: 180px;
+    width: 300px;
 }
+
 #content {
     padding: 16px;
     padding-top: 0px;
-    top: 130px;
-    width: 70%;
-    height: 80%;
-    margin-left: 125px;
-    margin-right: 18px;
+    height: 450px;
+    margin-top: 18px;
 }
+
 .well {
     border: 5px solid #e3e3e3;
     padding: 10px;
 }
+
+#content-body {
+    width: 975px;
+    margin-left: 135px;
+    padding: 0px;
+}
+
+a {
+    font-size: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    font-size: inherit;
+    color: #000000;
+    text-decoration: none;
+}
+
+a:active {
+    font-size: inherit;
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: inherit;
+    color: #505040;
+    text-decoration: none;
+}
+

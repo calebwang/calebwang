@@ -8,13 +8,20 @@ html
     link(href='http://fonts.googleapis.com/css?family=Quattrocento+Sans', rel='stylesheet', type='text/css')
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
   body
-    #header
-      span#header-hero
-        include header
-      span#header-nav
-        span.navicon about
-        span.navicon blog
-        span.navicon contact
-    div#content.well
-      p On a cold and dark night...
-    script(src='/js/quote.js', type='text/javascript')
+    #content-body
+      div#header
+        span#header-hero
+          include header
+        span#header-nav
+          span.navicon
+            a(href='/about') about
+          span.navicon
+            a(href='/blog') blog
+          span.navicon
+            a(href='/contact') contact
+          span.navicon
+            a(href='/projects') projects
+        span#header-quote I approve my own pull requests.
+      div#content.well
+        p On a cold and dark night...
+      script(src='/js/quote.js', type='text/javascript')
