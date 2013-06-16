@@ -1,11 +1,11 @@
 html {
     color:#000000;
-    background:#f0f0f0;
+    background:#fbfbfb;
 }
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background:#f0f0f0;
+    background:#fbfbfb;
     font-weight: 200;
 }
 
@@ -22,10 +22,12 @@ h2 {
     margin-top: 8px;
     margin-bottom: 4px;
     line-height: 30px;
+    font-weight: normal;
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 22px;
+    font-weight: normal;
 }
 
 .sidebar {
@@ -37,6 +39,7 @@ h3 {
 .navicon {
     margin-left: 34px;
     margin-right: 34px;
+    text-shadow: 1px 1px 6px #b0b0b0;
 }
 
 #header {
@@ -44,16 +47,23 @@ h3 {
     top: 0px;
     height: 100px;
     border-bottom: 4px solid #3399cc;
-    /*3399cc*/
+    margin-top: 220px;
 }
 
 #header-hero {
     float: left;
     text-align: left;
     margin-left: 10px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     margin-top: 42px;
     width: 400px;
     height: 72px;
+    text-shadow: 1px 1px 5px #a0a0a0;
 }
 
 #header-nav{
@@ -74,26 +84,81 @@ h3 {
     width: 300px;
 }
 
+#content-container {
+    margin-top: 18px;
+    padding: 10px;
+}
+
 #content {
     padding: 16px;
     padding-top: 0px;
     height: 450px;
-    margin-top: 18px;
 }
-
 .well {
     border: 5px solid #e3e3e3;
-    padding: 10px;
 }
 
-#content-body {
+#page-content {
     width: 975px;
     margin-left: 135px;
     padding: 0px;
 }
 
-a {
+a.nav{
     font-size: inherit;
+    color: #000000;
+    text-decoration: none;
+}
+
+a.nav:visited {
+    font-size: inherit;
+    color: #000000;
+    text-decoration: none;
+}
+
+a.nav:active {
+    font-size: inherit;
+    color: #000000;
+    text-decoration: none;
+}
+
+a.nav:hover {
+    font-size: inherit;
+    color: #505040;
+    text-decoration: none;
+}
+
+a.header:hover {
+    color: #000000;
+}
+
+a.nav{
+    font-size: inherit;
+    color: #000000;
+    text-decoration: none;
+}
+
+a.nav:visited {
+    font-size: inherit;
+    color: #000000;
+    text-decoration: none;
+}
+
+a.nav:active {
+    font-size: inherit;
+    color: #000000;
+    text-decoration: none;
+}
+
+a.nav:hover {
+    font-size: inherit;
+    color: #505040;
+    text-decoration: none;
+}
+
+a{
+    font-size: inherit;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -114,4 +179,5 @@ a:hover {
     color: #505040;
     text-decoration: none;
 }
+
 

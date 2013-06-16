@@ -4,24 +4,25 @@ html
   head
     block title
     link(rel='stylesheet', type='text/css', href='/css/style.css')
-    link(rel='icon', type='image/x-icon', href='/images/site.ico')
     link(href='http://fonts.googleapis.com/css?family=Quattrocento+Sans', rel='stylesheet', type='text/css')
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
   body
-    #content-body
+    #page-content
       div#header
         span#header-hero
-          include header
+          h1
+            a.header(href='/') caleb wang
         span#header-nav
           span.navicon
-            a(href='/about') about
+            a.nav(href='/about') about
           span.navicon
-            a(href='/blog') blog
+            a.nav(href='/blog') blog
           span.navicon
-            a(href='/contact') contact
+            a.nav(href='/contact') contact
           span.navicon
-            a(href='/projects') projects
-        span#header-quote I approve my own pull requests.
-      div#content.well
-        p On a cold and dark night...
-      script(src='/js/quote.js', type='text/javascript')
+            a.nav(href='/projects') projects
+        span#header-quote
+      div#content-container.well(hidden)
+        div#content(hidden)
+          block content
+    script(src='/js/header.js', type='text/javascript')

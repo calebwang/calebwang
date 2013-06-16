@@ -22,7 +22,7 @@ poet
     .init();
 
 app.get('/', function(req, res){
-    res.render('about', {
+    res.render('layout', {
                          title: 'caleb'
                         });
     console.log('Serving /');
