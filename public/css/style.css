@@ -44,10 +44,9 @@ h3 {
 
 #header {
     padding-left: 8px;
-    top: 0px;
     height: 100px;
+    /*margin-top: 225px;*/
     border-bottom: 4px solid #3399cc;
-    margin-top: 220px;
 }
 
 #header-hero {
@@ -80,7 +79,7 @@ h3 {
     font-size: 12px;
     text-align: right;
     margin-top: 102px;
-    margin-left: 180px;
+    margin-left: 175px;
     width: 300px;
 }
 

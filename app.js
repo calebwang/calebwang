@@ -29,8 +29,9 @@ app.get('/', function(req, res){
 });
 
 app.get('/about', function(req, res){
+    console.log(req.headers['referer']);
     res.render('about', {
-                         title: 'caleb'
+                         title: 'caleb',
                         });
     console.log('Serving /about');
 });
