@@ -9,7 +9,7 @@ $(document).ready(function() {
   $('#page-content').css('margin-left', (width - 1000)/2 - 55);
   $('#header-quote').css('margin-left', (width - 1000)/2 - 15);
   $('#content').css('height', height - 220);
-  $('#header').css('margin-top', height/2 - 20);
+  $('#header').css('margin-top', height/2 - 10);
 
   $.getJSON('json/quotes.json', function(json) {
     var quotes = json.quotes
@@ -18,13 +18,16 @@ $(document).ready(function() {
   });
 
   if (page != '') { 
-
+    var referrer = document.referrer
     if (document.referrer.split('/').pop() != '') {
-      $('#header').css('margin-top', 0);
+      if (referrer.indexOf(document.domain) != -1) {
+        $('#header').css('margin-top', 0);
+      }
     }
-    $('#header').animate( {'margin-top': '0' }, {queue: false, duration: 600} );
+    $('#header').animate( {'margin-top': '1' }, {queue: false, duration: 600} );
     $('#content-container').fadeIn({duration: 750, queue: false});
     $('#content').slideDown(750);
+    $('#content-container').scrollTop(0);
   }
 });
 
