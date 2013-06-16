@@ -2,8 +2,8 @@ var draw_sidebar = function() {
     var canvas = document.getElementById('sidebar');
     canvas.height = $(window).height();
     canvas.width = 300;
-    var context = canvas.getContext('2d'); context.fillStyle = "#c0c0c0";
-    context.strokeStyle = "#a8a8a8";
+    var context = canvas.getContext('2d'); context.fillStyle = "#e0e0e0";
+    context.strokeStyle = "#3399cc";
     context.lineWidth = 20;
     context.translate(canvas.height*1.33, 0);
     context.beginPath();

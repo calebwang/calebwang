@@ -105,3 +105,13 @@ $(document).ready(function() {
 
   doScroll(1);
 });
+
+var redraw = function() {
+  styles = getNaviconStyles();
+  $('.navicon').each(function(i, obj) {
+    var $this = $(this);
+    $this.css(styles[i]);
+  }); 
+}
+
+$(window).on('resize', redraw);
