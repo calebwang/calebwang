@@ -9,7 +9,7 @@ $(document).ready(function() {
   $('#page-content').css('margin-left', (width - 1000)/2 - 55);
   $('#header-quote').css('margin-left', (width - 1000)/2 - 15);
   $('#content').css('height', height - 290);
-  $('#header').css('margin-top', height/2 - 80);
+  $('#header').css('margin-top', height/2 - 10);
 
   $.getJSON('json/quotes.json', function(json) {
     var quotes = json.quotes
