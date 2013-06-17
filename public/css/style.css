@@ -13,8 +13,8 @@ body {
 h1 {
     font-weight: 300;
     vertical-align: middle;
-    font-size: 72px;
-    margin-top: -15px;
+    font-size: 64px;
+    margin-top: -8px;
 }
 
 
@@ -44,6 +44,7 @@ h3 {
 }
 
 #header {
+    font-family: 'Century Gothic';
     padding-left: 8px;
     height: 100px;
     /*margin-top: 225px;*/
@@ -69,9 +70,9 @@ h3 {
 #header-nav{
     float: right;
     width: 530px;
-    margin-top: 75px;
+    margin-top: 77px;
     margin-left: 20px;
-    font-size: 24px;   
+    font-size: 22px;   
 }
 
 #header-quote {
@@ -80,8 +81,8 @@ h3 {
     font-size: 12px;
     text-align: right;
     margin-top: 102px;
-    margin-left: 175px;
-    width: 300px;
+    margin-left: 195px;
+    width: 320px;
 }
 
 #content-container {
