@@ -6,6 +6,7 @@ html {
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background:#fbfbfb;
+    font-style: normal;
     font-weight: 200;
 }
 
@@ -87,6 +88,7 @@ h3 {
     position: relative;
     margin-top: 18px;
     padding: 12px;
+    padding-right: 40px;
     overflow: hidden;
 }
 
@@ -94,6 +96,7 @@ h3 {
     position: relative;
     padding: 18px;
     padding-top: 4px;
+    padding-right: 36px;
     height: 450px;
 }
 
