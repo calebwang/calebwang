@@ -8,7 +8,7 @@ $(document).ready(function() {
   var width = $(window).width();
   $('#page-content').css('margin-left', (width - 1000)/2 - 55);
   $('#header-quote').css('margin-left', (width - 1000)/2 - 15);
-  $('#content').css('height', height - 220);
+  $('#content').css('height', height - 260);
   $('#header').css('margin-top', height/2 - 10);
 
   $.getJSON('json/quotes.json', function(json) {
@@ -21,12 +21,12 @@ $(document).ready(function() {
     var referrer = document.referrer
     if (document.referrer.split('/').pop() != '') {
       if (referrer.indexOf(document.domain) != -1) {
-        $('#header').css('margin-top', 0);
+        $('#header').css('margin-top', 30);
       }
     }
-    $('#header').animate( {'margin-top': '1' }, {queue: false, duration: 600} );
-    $('#content-container').fadeIn({duration: 750, queue: false});
-    $('#content').slideDown(750);
+    $('#header').animate( {'margin-top': '30' }, {queue: false, duration: 600} );
+    $('#content-container').fadeIn({duration: 700, queue: false});
+    $('#content').slideDown(700);
     $('#content-container').scrollTop(0);
   }
 });
