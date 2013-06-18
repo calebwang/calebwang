@@ -22,48 +22,44 @@ poet
     .init();
 
 app.get('/', function(req, res){
-    res.render('layout', {
-                         title: 'caleb'
-                        });
-    console.log('Serving /');
+    res.render('index');
+    console.log('Serving /index');
 });
 
 app.get('/about', function(req, res){
     console.log(req.headers['referer']);
-    res.render('about', {
-                         title: 'caleb',
-                        });
+    res.render('about');
     console.log('Serving /about');
 });
 
 app.get('/projects', function(req, res){
-    res.render('projects', {title: 'projects'});
+    res.render('projects');
     console.log('Serving /projects');
 });
 
 app.get('/contact', function(req, res){
-    res.render('contact', {title: 'contact'});
+    res.render('contact');
     console.log('Serving /contact');
 });
 
 app.get('/blog', function(req, res){
-    res.render('blog', {title: 'blog'});
+    res.render('blog');
     console.log('Serving /blog');
 });
 
 app.get('/resume', function(req, res){
-    res.render('about', {title: 'about'});
+    res.render('about');
     console.log('Serving /blog');
 });
 
 
 app.get('/blog/categories', function(req, res){
-    res.render('categories', {title: 'blog - categories'});
+    res.render('categories');
     console.log('Serving /blog/categories');
 });
 
 app.get('/blog/tags', function(req, res){
-    res.render('tags', {title: 'blog - tags'});
+    res.render('tags');
     console.log('Serving /blog/tags');
 });
 
