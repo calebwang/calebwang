@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.calebwang.net/</loc>
+</url>
+<url>
+  <loc>http://www.calebwang.net/about</loc>
+</url>
+<url>
+  <loc>http://www.calebwang.net/blog</loc>
+</url>
+<url>
+  <loc>http://www.calebwang.net/contact</loc>
+</url>
+<url>
+  <loc>http://www.calebwang.net/projects</loc>
+</url>
+<url>
+  <loc>http://www.calebwang.net/blog/post/hello-world</loc>
+</url>
+<url>
+  <loc>http://www.calebwang.net/blog/tag/hello</loc>
+</url>
+<url>
+  <loc>http://www.calebwang.net/blog/tag/world</loc>
+</url>
+<url>
+  <loc>http://www.calebwang.net/blog/tag/meta</loc>
+</url>
+<url>
+  <loc>http://www.calebwang.net/blog/tag/test</loc>
+</url>
+<url>
+  <loc>http://www.calebwang.net/blog/page/1</loc>
+</url>
+</urlset>
