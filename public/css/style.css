@@ -201,6 +201,91 @@ a:hover {
     text-decoration: none;
 }
 
+
+a.purple:hover {
+    background: #333333;
+    color: #aa00aa;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+a.purple {
+    color: #ffffff;
+    background: #aa00aa;
+    padding: 10px;
+    display: block;
+}
+
+a.orange:hover {
+    color: #ff9900;
+    background: #333333;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+a.orange {
+    color: #ffffff;
+    background: #ff9900;
+    font-size: inherit;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+a.orange:hover {
+    color: #ff9900;
+    background: #333333;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+a.orange {
+    color: #ffffff;
+    background: #ff9900;
+    font-size: inherit;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+a.blue:hover {
+    color: #3399ff;
+    background: #333333;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+a.blue {
+    color: #ffffff;
+    background: #3399ff;
+    font-size: inherit;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+
+a.red:hover {
+    color: #ff3333;
+    background: #333333;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+a.red {
+    color: #ffffff;
+    background: #ff3333;
+    font-size: inherit;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+
+
+li {
+    margin: 5px;
+}
 p {
     padding: 0px;
     font-size: 20px;
@@ -209,6 +294,12 @@ p {
 
 .pagination {
   margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  font-size: 28px;
 }
 
 .pagination ul {
