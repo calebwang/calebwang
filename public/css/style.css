@@ -282,6 +282,23 @@ a.red {
 }
 
 
+a.green:hover {
+    color: #33bb33;
+    background: #333333;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+a.green {
+    color: #ffffff;
+    background: #33bb33;
+    font-size: inherit;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+
 
 li {
     margin: 5px;
