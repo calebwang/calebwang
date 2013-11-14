@@ -12,6 +12,7 @@
         "express":"3.0.x",
         "jade":"0.27.x",
         "poet":"0.2.x",
-        "connect":"2.x"
-        }
+        "connect":"2.x",
+        "forever":"0.10.x"
+    }
 }
