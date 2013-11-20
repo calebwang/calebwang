@@ -11,6 +11,7 @@ $(document).ready(function() {
   $('#content').css('height', height - 290);
   $('#header').css('margin-top', height/2 - 10);
 
+
   $.getJSON('json/quotes.json', function(json) {
     var quotes = json.quotes
     var quoteHtml = quotes.randomElement();
@@ -29,5 +30,8 @@ $(document).ready(function() {
     $('#content').slideDown(600);
     $('#content-container').scrollTop(0);
   }
+
+  var pos = $('#content-container').offset();
+  $('#page-sidebar').css({'left': pos.left + 60 + $('#content-container').width(), 'top': pos.top});
 });
 

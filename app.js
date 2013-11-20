@@ -49,6 +49,7 @@ app.get('/about', function(req, res){
 
 app.get('/projects', function(req, res){
     res.render('projects');
+    var currentdate = new Date(); 
     var datetime = "Serving /projects: " +  
                     + (currentdate.getMonth()+1) + "/"
                     + currentdate.getDate()  + "/" 
