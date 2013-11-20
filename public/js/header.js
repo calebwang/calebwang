@@ -18,6 +18,7 @@ $(document).ready(function() {
     $('#header-quote').html(quoteHtml);
   });
 
+
   if (page != '') { 
     var referrer = document.referrer
     if (document.referrer.split('/').pop() != '') {
@@ -29,9 +30,16 @@ $(document).ready(function() {
     $('#content-container').fadeIn({duration: 600, queue: false});
     $('#content').slideDown(600);
     $('#content-container').scrollTop(0);
+    
+    var pos = $('#content-container').offset();
+    $('#page-sidebar').css({'left': pos.left + 60 + $('#content-container').width(), 'top': pos.top});
+    if (page != '') { 
+      var referrer = document.referrer
+      if (document.referrer.split('/').pop() == '') {
+        $('#page-sidebar').animate( {'top': '152' }, 800);
+      }
+    }
   }
 
-  var pos = $('#content-container').offset();
-  $('#page-sidebar').css({'left': pos.left + 60 + $('#content-container').width(), 'top': pos.top});
 });
 
