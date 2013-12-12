@@ -119,6 +119,16 @@ h3 {
     padding: 0px;
 }
 
+#page-sidebar {
+    position: fixed;
+    width: 250px;
+    padding-left: 10px;
+}
+
+#sidebar {
+    height: 200px;
+}
+
 a.nav{
     font-size: inherit;
     color: #000000;

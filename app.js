@@ -23,33 +23,80 @@ poet
 
 app.get('/', function(req, res){
     res.render('index');
-    console.log('Serving /index');
+    var currentdate = new Date(); 
+    var datetime = "Serving /index: " 
+                    + (currentdate.getMonth()+1) + "/"
+                    + currentdate.getDate()  + "/" 
+                    + currentdate.getFullYear() + " @ "  
+                    + currentdate.getHours() + ":"  
+                    + currentdate.getMinutes() + ":" 
+                    + currentdate.getSeconds();
+    console.log(datetime);
 });
 
 app.get('/about', function(req, res){
     console.log(req.headers['referer']);
     res.render('about');
-    console.log('Serving /about');
+    var currentdate = new Date(); 
+    var datetime = "Serving /about: " + (currentdate.getMonth()+1) + "/"
+                    + currentdate.getDate()  + "/" 
+                    + currentdate.getFullYear() + " @ "  
+                    + currentdate.getHours() + ":"  
+                    + currentdate.getMinutes() + ":" 
+                    + currentdate.getSeconds();
+    console.log(datetime);
 });
 
 app.get('/projects', function(req, res){
     res.render('projects');
-    console.log('Serving /projects');
+    var currentdate = new Date(); 
+    var datetime = "Serving /projects: " +  
+                    + (currentdate.getMonth()+1) + "/"
+                    + currentdate.getDate()  + "/" 
+                    + currentdate.getFullYear() + " @ "  
+                    + currentdate.getHours() + ":"  
+                    + currentdate.getMinutes() + ":" 
+                    + currentdate.getSeconds();
+    console.log(datetime);
 });
 
 app.get('/contact', function(req, res){
     res.render('contact');
-    console.log('Serving /contact');
+    var currentdate = new Date(); 
+    var datetime = "Serving /contact: "  
+                    + (currentdate.getMonth()+1) + "/"
+                    + currentdate.getDate()  + "/" 
+                    + currentdate.getFullYear() + " @ "  
+                    + currentdate.getHours() + ":"  
+                    + currentdate.getMinutes() + ":" 
+                    + currentdate.getSeconds();
+    console.log(datetime);
 });
 
 app.get('/blog', function(req, res){
     res.render('blog');
-    console.log('Serving /blog');
+    var currentdate = new Date(); 
+    var datetime = "Serving /blog: " +  
+                    + (currentdate.getMonth()+1) + "/"
+                    + currentdate.getDate()  + "/" 
+                    + currentdate.getFullYear() + " @ "  
+                    + currentdate.getHours() + ":"  
+                    + currentdate.getMinutes() + ":" 
+                    + currentdate.getSeconds();
+    console.log(datetime);
 });
 
 app.get('/resume', function(req, res){
     res.render('about');
-    console.log('Serving /blog');
+    var currentdate = new Date(); 
+    var datetime = "Serving /resume: "  
+                    + (currentdate.getMonth()+1) + "/"
+                    + currentdate.getDate()  + "/" 
+                    + currentdate.getFullYear() + " @ "  
+                    + currentdate.getHours() + ":"  
+                    + currentdate.getMinutes() + ":" 
+                    + currentdate.getSeconds();
+    console.log(datetime);
 });
 
 
