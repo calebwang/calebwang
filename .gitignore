@@ -3,3 +3,4 @@ node_modules/
 *.swp
 .*.swp
 .DS_STORE
+*.log
